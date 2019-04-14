@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class TesteResource {
 	
 	@RequestMapping(method = RequestMethod.GET)
-	public ResponseEntity<String> buscar() {
+	public ResponseEntity<?> buscar() {
+		System.out.println("ei mah");
 		return ResponseEntity.ok("TESTOU");
 	}
 }
